@@ -26,22 +26,22 @@ const uint16_t PROGMEM combo10[] = {KC_T, KC_R, COMBO_END};
 const uint16_t PROGMEM combo11[] = {KC_N, KC_M, COMBO_END};
 const uint16_t PROGMEM combo12[] = {KC_B, KC_V, COMBO_END};
 
-const uint16_t PROGMEM combo13[] = {KC_P, KC_O, COMBO_END};
+const uint16_t PROGMEM combo13[] = {KC_Q, KC_W, COMBO_END};
 
 const uint16_t PROGMEM combo14[] = {KC_SLSH, KC_Z, COMBO_END};
 
 combo_t key_combos[] = {
     COMBO(combo1, KC_ESC),   COMBO(combo2, KC_ESC),
 
-    COMBO(combo3, KC_LPRN),  COMBO(combo4, KC_RPRN),
+    COMBO(combo3, KC_RPRN),  COMBO(combo4, KC_LPRN),
 
-    COMBO(combo5, KC_LBRC),  COMBO(combo6, KC_RBRC),
+    COMBO(combo5, KC_RBRC),  COMBO(combo6, KC_LBRC),
 
     COMBO(combo7, CW_TOGG),  COMBO(combo8, CW_TOGG),
 
-    COMBO(combo9, KC_LCBR),  COMBO(combo10, KC_RCBR),
+    COMBO(combo9, KC_RCBR),  COMBO(combo10, KC_LCBR),
 
-    COMBO(combo11, KC_LT),   COMBO(combo12, KC_GT),
+    COMBO(combo11, KC_GT),   COMBO(combo12, KC_LT),
 
     COMBO(combo13, KC_AT),
 
@@ -49,9 +49,9 @@ combo_t key_combos[] = {
 
 };
 
-const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {[0] = LAYOUT_split_3x5_2(KC_P, KC_O, KC_I, KC_U, KC_Y, KC_T, KC_R, KC_E, KC_W, KC_Q, KC_SCLN, KC_L, KC_K, KC_J, KC_H, KC_G, KC_F, KC_D, KC_S, KC_A, KC_SLSH, KC_DOT, KC_COMM, KC_M, KC_N, KC_B, KC_V, KC_C, KC_X, KC_Z, LCTL_T(KC_ENT), LT(1, KC_SPC), LT(1, KC_BSPC), OSM(MOD_LSFT)),
-                                                              [1] = LAYOUT_split_3x5_2(KC_DLR, KC_ASTR, KC_PLUS, KC_EQL, KC_EXLM, KC_CIRC, KC_AMPR, KC_DQUO, KC_QUOT, KC_GRV, KC_0, KC_9, KC_8, KC_7, KC_6, KC_5, KC_4, KC_3, KC_2, KC_1, KC_UNDS, KC_SLSH, KC_MINS, KC_EQL, KC_QUES, KC_PERC, KC_PIPE, KC_TILD, KC_BSLS, KC_HASH, KC_TAB, LT(2, KC_SPC), LT(2, KC_BSPC), KC_ESC),
-                                                              [2] = LAYOUT_split_3x5_2(LGUI(KC_0), LGUI(KC_9), LGUI(KC_8), LGUI(KC_7), LGUI(KC_6), LGUI(KC_5), LGUI(KC_4), LGUI(KC_3), LGUI(KC_2), LGUI(KC_1), LGUI(KC_P), KC_RGHT, KC_UP, KC_DOWN, KC_LEFT, SGUI(KC_H), SGUI(KC_ENT), SGUI(KC_S), KC_TRNS, SGUI(KC_Q), LGUI(KC_ENT), LGUI(KC_L), LGUI(KC_K), LGUI(KC_J), LGUI(KC_H), KC_TRNS, LGUI(KC_M), LGUI(KC_T), LGUI(KC_F), KC_LSFT, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
+const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {[0] = LAYOUT_split_3x5_2(KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, OSM(MOD_LSFT), LT(1, KC_BSPC), LT(1, KC_SPC), LCTL_T(KC_ENT)),
+                                                              [1] = LAYOUT_split_3x5_2(KC_GRV, KC_QUOT, KC_DQUO, KC_AMPR, KC_CIRC, KC_EXLM, KC_EQL, KC_PLUS, KC_ASTR, KC_DLR, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_HASH, KC_BSLS, KC_TILD, KC_PIPE, KC_PERC, KC_QUES, KC_EQL, KC_MINS, KC_SLSH, KC_UNDS, KC_TAB, LT(2, KC_BSPC), LT(2, KC_SPC), KC_ESC),
+                                                              [2] = LAYOUT_split_3x5_2(LGUI(KC_1), LGUI(KC_2), LGUI(KC_3), LGUI(KC_4), LGUI(KC_5), LGUI(KC_6), LGUI(KC_7), LGUI(KC_8), LGUI(KC_9), LGUI(KC_0), SGUI(KC_Q), KC_TRNS, SGUI(KC_S), SGUI(KC_ENT), SGUI(KC_H), KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, LGUI(KC_P), KC_LSFT, LGUI(KC_F), LGUI(KC_T), LGUI(KC_M), KC_TRNS, LGUI(KC_H), LGUI(KC_J), LGUI(KC_K), LGUI(KC_L), LGUI(KC_ENT), KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
                                                               [3] = LAYOUT_split_3x5_2(KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_UNDS, KC_PIPE, KC_QUOT, KC_TRNS, KC_CIRC, KC_ASTR, KC_AMPR, KC_NO, KC_TRNS, KC_HASH, KC_TILD, KC_SLSH, KC_DQUO, KC_DLR, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_MINS, KC_BSLS, KC_GRV, KC_TRNS, RM_PREV, KC_TRNS, KC_TRNS, RM_NEXT),
                                                               [4] = LAYOUT_split_3x5_2(KC_TRNS, KC_COLN, KC_LT, KC_GT, KC_SCLN, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_LCBR, KC_RCBR, KC_LPRN, KC_RPRN, KC_AT, KC_TRNS, KC_NO, KC_EQL, KC_PLUS, KC_PERC, KC_TRNS, KC_EXLM, KC_LBRC, KC_RBRC, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_VOLD, KC_TRNS, KC_TRNS, KC_VOLU),
                                                               [5] = LAYOUT_split_3x5_2(KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_F7, KC_F8, KC_F9, KC_F10, KC_TRNS, KC_NO, LCTL(KC_LALT), KC_TRNS, KC_TRNS, KC_TRNS, KC_F4, KC_F5, KC_F6, KC_F11, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_F1, KC_F2, KC_F3, KC_F12, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
