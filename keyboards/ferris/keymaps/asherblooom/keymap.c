@@ -28,20 +28,24 @@ const uint16_t PROGMEM combo12[] = {KC_B, KC_V, COMBO_END};
 
 const uint16_t PROGMEM combo13[] = {KC_Q, KC_W, COMBO_END};
 
+const uint16_t PROGMEM combo14[] = {KC_SLSH, KC_Z, COMBO_END};
+
 combo_t key_combos[] = {
-    COMBO(combo1, KC_ESC),  COMBO(combo2, KC_ESC),
+    COMBO(combo1, KC_ESC),   COMBO(combo2, KC_ESC),
 
-    COMBO(combo3, KC_RPRN), COMBO(combo4, KC_LPRN),
+    COMBO(combo3, KC_RPRN),  COMBO(combo4, KC_LPRN),
 
-    COMBO(combo5, KC_RCBR), COMBO(combo6, KC_LCBR),
+    COMBO(combo5, KC_RCBR),  COMBO(combo6, KC_LCBR),
 
-    COMBO(combo7, CW_TOGG), COMBO(combo8, CW_TOGG),
+    COMBO(combo7, CW_TOGG),  COMBO(combo8, CW_TOGG),
 
-    COMBO(combo9, KC_RBRC), COMBO(combo10, KC_LBRC),
+    COMBO(combo9, KC_RBRC),  COMBO(combo10, KC_LBRC),
 
-    COMBO(combo11, KC_GT),  COMBO(combo12, KC_LT),
+    COMBO(combo11, KC_GT),   COMBO(combo12, KC_LT),
 
     COMBO(combo13, KC_AT),
+
+    COMBO(combo14, QK_BOOT),
 
 };
 
