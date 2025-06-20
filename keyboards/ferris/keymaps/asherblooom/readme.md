@@ -26,7 +26,6 @@ The reason I recommend convenience shortcuts instead of more commonly used keys 
 Despite being missing on this layer, "meta", "tab", "esc" and such are accessible from any other layer: see Layer 7.
 
 The behaviour of some keys differ when held:
-
 * Both homing pinkies behave as shift.
 * Both bottom-row ring fingers behave as ctrl.
 * Both bottom-row middle fingers behave as alt.
@@ -61,7 +60,7 @@ On the right hand, in addition to ctrl and alt which are available through trans
 
 ![Layer 3](https://i.imgur.com/9tLAUqG.png)
 
-When holding down the left index, one may access about half of the symbols. The pinkies store `^` and `$` symbols that represent begin and end in vim. The left homerow hosts `*` and `&`, symbols which are related in the way that they represent some form of indirection in programming languages such as rust. On the right hand, most symbols used when navigating the command line are stored together, organized by columns of related symbols.
+When holding down the left index, one may access about half of the symbols. The pinkies store `^` and `$` symbols that represent begin and end in vim. The left homerow hosts `*` and `&`, symbols which are related in the way that they represent some form of indirection in programming languages such as rust. On the right hand, most symbols used when navigating the command line are stored together, organized by columns of related symbols. 
 
 ### Layer 4: Left symbols
 
@@ -82,7 +81,7 @@ There is a shortcut for ctrl+alt on the left hand to enable convenient switching
 ![Layer 6](https://i.imgur.com/S8gq9Kj.png)
 
 The number layer is accessed by holding the right ring finger. It hosts the numbers and some duplicated symbols that are commonly accessed next to numbers, such as mathematical operators.
-The number are layed out similarly to a numpad, but with the middle row and the homerow swapped so that the most used numbers: 0, 1, 2 and 3 are all available in homing positions.
+The number are layed out similarly to a numpad, but with the middle row and the homerow swapped so that the most used numbers: 0, 1, 2 and 3 are all available in homing positions. 
 
 ### Layer 7: Always accessible
 
@@ -106,7 +105,6 @@ How do I edit and update the keymap?
 The `keymap.json` file is generated from the qmk configurator interface and formatted for better readability in the context of the Ferris keyboard.
 
 To edit it, you may:
-
 * Edit it directly from a text editor.
 * Edit it from the qmk configurator.
 
@@ -117,10 +115,8 @@ If you decide to use the latter workflow, here are the steps to follow:
 * Perform any modification to the keymap in the web UI
 * Export the keymap to your downloads folder, by hitting the "Export QMK keymap json file" button (it has a drawing with a down arrow on it)
 * Override your original keymap with the output of formatting the exported keymap by running a command such as this one from the root of your qmk repo:
-
   ```
   ./keyboards/handwired/ferris/keymaps/json2crab.py --input <Your download directory>/default.json > ./keyboards/handwired/ferris/keymaps/default/keymap.json
   ```
-
   Note that you may first need to make json2crab executable by using `chmod +x` on it.
   Also note that you may then want to remove the exported keymap from your dowload directory.
