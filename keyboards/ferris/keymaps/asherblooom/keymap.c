@@ -35,11 +35,11 @@ combo_t key_combos[] = {
 
     COMBO(combo3, KC_RPRN),  COMBO(combo4, KC_LPRN),
 
-    COMBO(combo5, KC_RCBR),  COMBO(combo6, KC_LCBR),
+    COMBO(combo5, KC_RBRC),  COMBO(combo6, KC_LBRC),
 
     COMBO(combo7, CW_TOGG),  COMBO(combo8, CW_TOGG),
 
-    COMBO(combo9, KC_RBRC),  COMBO(combo10, KC_LBRC),
+    COMBO(combo9, KC_RCBR),  COMBO(combo10, KC_LCBR),
 
     COMBO(combo11, KC_GT),   COMBO(combo12, KC_LT),
 
